@@ -107,7 +107,7 @@ bot.on('message', msg => {
 // Guild member add
 bot.on("guildMemberAdd", member => {
     const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'general')
-    welcomeChannel.reply (`Welcome! ${member}! Make sure to "e!rules" to see the rules to the server!`)
+    welcomeChannel.send (`Welcome! ${member}! Make sure to "e!rules" to see the rules to the server!`)
     
 });
 //-----------------------------
