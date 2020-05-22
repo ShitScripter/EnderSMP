@@ -120,12 +120,9 @@ bot.on("guildMemberAdd", member => {
 //-----------------------------
 // Status
 bot.on('ready', () => {
-    bot.user.setStatus('available')
-    console.log('Bot Status set!!')
-    bot.user.setPresence({
-            name: 'discord',
-            type: "Playing endersplace.crafted.pro",
-    });
+    bot.user.setStatus('online')
+    bot.user.setGame('Playing endersplace.crafted.pro')
+ 
 }); 
 //------------------------------
 
