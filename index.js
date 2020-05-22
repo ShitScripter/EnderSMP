@@ -15,6 +15,12 @@ bot.on('message', msg => {
     }
 });
 
+bot.on('message', msg => {
+    if (msg.content === "e!rules") {
+        msg.reply('Respect and listen to staff, Respect others, Dont Curse, Have fun! See more info in #rules');
+    }
+});
+
 //----------------------------
 
 // Communicate
@@ -101,11 +107,6 @@ bot.on('message', msg => {
 
 //-----------------------------
 
-bot.on('message', msg => {
-    if (msg.content === "!Rules") {
-        msg.reply('Respect and listen to staff, Respect others, Dont Curse, Have fun! See more info in #rules');
-    }
-});
 
 // Login / Run
 
