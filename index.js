@@ -15,7 +15,7 @@ bot.on('message', msg => {
     }
 });
 
-Discord.Message.prototype.reply = false
+
 
 
 bot.on('message', msg => {
