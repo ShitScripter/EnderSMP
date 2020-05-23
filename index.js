@@ -15,15 +15,12 @@ bot.on('message', msg => {
     }
 });
 
-bot.on('message', msg => {
-    if (msg.content === "test") {
-        msg.reply('```CSS\nNoKeyWordsHere\n```');
-    }
-});
+
 
 bot.on('message', msg => {
     if (msg.content === "e!rules") {
-        msg.reply("```diff\n-Discord Rules | Breaking any of these rules will result in an immediate ban\n!➼ No Harassment. This includes Sexist, Racial, Homophobic or just generally rude comments towards any player\n!➼ No NSFW. Keep the channel PG\n!➼ No Cursing.\n!➼ No Controversial or triggering topics. Including suicide, self-harm, substance abuse, sexual content, etc.\n!➼ No advertising of any kind (This includes dm advertising)\n!➼ Use the channels appropriately\n!➼ Staff decisions are final\n!➼ Use Common Sense\n\n!➼ All Discord Terms of Service (https://discordapp.com/terms) apply. Breaking any of these will result in a permanent ban from the server. (This includes DM Advertising) If you witness any of these terms being broken, **please report them to a server Staff Member immediately**.\n\n\n-Server Rules | All Previous rules Apply!\n!➼ No Cheating/Hacking. This includes but is not limited to injecting cheats into PVP clients, Xray texture packs, ghost clients. (PVP Clients are OK)\n!➼ No abusing Glitches/Exploits. If you are caught doing so you will be permanently banned. *     *Please report these glitches to the staff members IMMEDIATELY**.\n!➼ Schematica is OK but printer is not.\n```");
+        const chann = member.guild.channels.cache.find(channel => channel.name === 'general' , 'bot-cmd', 'images','yt-advertising','spam','suggestions','bug-repots')
+        send.chann("```diff\n-Discord Rules | Breaking any of these rules will result in an immediate ban\n!➼ No Harassment. This includes Sexist, Racial, Homophobic or just generally rude comments towards any player\n!➼ No NSFW. Keep the channel PG\n!➼ No Cursing.\n!➼ No Controversial or triggering topics. Including suicide, self-harm, substance abuse, sexual content, etc.\n!➼ No advertising of any kind (This includes dm advertising)\n!➼ Use the channels appropriately\n!➼ Staff decisions are final\n!➼ Use Common Sense\n\n!➼ All Discord Terms of Service (https://discordapp.com/terms) apply. Breaking any of these will result in a permanent ban from the server. (This includes DM Advertising) If you witness any of these terms being broken, **please report them to a server Staff Member immediately**.\n\n\n-Server Rules | All Previous rules Apply!\n!➼ No Cheating/Hacking. This includes but is not limited to injecting cheats into PVP clients, Xray texture packs, ghost clients. (PVP Clients are OK)\n!➼ No abusing Glitches/Exploits. If you are caught doing so you will be permanently banned. *     *Please report these glitches to the staff members IMMEDIATELY**.\n!➼ Schematica is OK but printer is not.\n```");
     }
 });
 
