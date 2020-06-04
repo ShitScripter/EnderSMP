@@ -12,6 +12,7 @@ bot.on('ready', () => {
 bot.on('message', msg => {
     if (msg.content === "e!ip") {
         msg.reply('endersplace.crafted.pro -Version 1.15.2');
+
     }
 });
 
@@ -26,7 +27,7 @@ bot.on('message', msg => {
 });
 
 
-//----------------------------
+//----------------------------  
 
 // Communicate
 bot.on('message', msg => {
@@ -111,7 +112,7 @@ bot.on('message', msg => {
 });
 // Guild member add
 bot.on("guildMemberAdd", member => {
-    const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'general')
+    const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'server-messages')
     welcomeChannel.send (`Welcome! ${member}! Make sure to "e!rules" to see the rules to the server!`)
     
 });
@@ -120,7 +121,7 @@ bot.on("guildMemberAdd", member => {
 // Status
 bot.on('ready', () => {
     bot.user.setStatus('online')
-    bot.user.setGame('Playing endersplace.crafted.pro')
+    bot.user.setGame('Playing endersplace.crafted.pro' )
  
 }); 
 //------------------------------
