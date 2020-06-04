@@ -112,18 +112,17 @@ bot.on('message', msg => {
 });
 // Guild member add
 bot.on("guildMemberAdd", member => {
-    const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'server-messages')
-    welcomeChannel.send (`Welcome! ${member}! Make sure to "e!rules" to see the rules to the server!`)
+    const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'server-messages');
+    welcomeChannel.send (`Welcome! ${member}! Make sure to "e!rules" to see the rules to the server!`);
     
 });
 //-----------------------------
 //-----------------------------
 // Status
-bot.on('ready', () => {
-    bot.user.setStatus('online')
-    bot.user.setGame('Playing endersplace.crafted.pro' )
- 
-}); 
+ // ------ bot.on('ready', () => {
+  // ------  bot.user.setStatus('online')
+  // ------  bot.user.setGame('Playing endersplace.crafted.pro' )
+ // ------}); 
 //------------------------------
 
 // Login / Run
