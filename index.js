@@ -120,9 +120,8 @@ bot.on("guildMemberAdd", member => {
 
 bot.on('message', msg => {
      if (msg.content === "1") {    
-       msg.Channel.reply(`2`);
-       console.log('update2')
-   
+        bot.channels.cache.get('general').send('Hello here!')
+        console.log('update2')
        }
    });
 console.log('update')
