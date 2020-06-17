@@ -119,7 +119,7 @@ bot.on("guildMemberAdd", member => {
 
 
 bot.on("message", function(message) {
-    let channelVar = bot.guilds.cache.get('Guild-ID').channels.cache.get('general');
+    let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('710930613774844004');
     if (message.content === '1') {   
         channelVar.send("2");
     }
