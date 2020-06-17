@@ -31,10 +31,11 @@ bot.on("message", function(message) {
 
 //----------------------------  
 
+
 // Communicate
 bot.on('message', msg => {
     if (msg.content === "are u here enderSMP") {
-        msg.reply('Yes I am here');
+        msg.channel.send('Yes I am here');
     }
 });
 //--------------------------
@@ -42,49 +43,49 @@ bot.on('message', msg => {
 // Greetings
 bot.on('message', msg => {  
     if (msg.content === "hi") {
-        msg.reply('Hello!!');
+        msg.channel.send('Hello!!');
     }
 });
 
 bot.on('message', msg => {
     if (msg.content === "hi!") {
-        msg.reply('Hello!!');
+        msg.channel.send('Hello!!');
     }
 });
 
 bot.on('message', msg => {
     if (msg.content === "Hi") {
-        msg.reply('Hello!!');
+        msg.channel.send('Hello!!');
     }
 });
 
 bot.on('message', msg => {
     if (msg.content === "Hi!") {
-        msg.reply('Hello!!');
+        msg.channel.send('Hello!!');
     }
 });
 
 bot.on('message', msg => {
     if (msg.content === "hello") {
-        msg.reply('Hi!!');
+        msg.channel.send('Hi!!');
     }
 });
 
 bot.on('message', msg => {
     if (msg.content === "hello!") {
-        msg.reply('Hi!!');
+        msg.channel.send('Hi!!');
     }
 });
 
 bot.on('message', msg => {
     if (msg.content === "Hello") {
-        msg.reply('Hi!!');
+        msg.channel.send('Hi!!');
     }
 });
 
 bot.on('message', msg => {
     if (msg.content === "Hello!") {
-        msg.reply('Hi!!');
+        msg.channel.send('Hi!!');
     }
 });
 //---------------------------------
@@ -121,6 +122,8 @@ bot.on("message", function(message) {
 });
 
 
+
+
 // Guild member add
 bot.on("guildMemberAdd", member => {
     const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'server-messages');
@@ -136,16 +139,6 @@ bot.on("message", function(message) {
     }
     
 });
-
-
-//-----------------------------
-//-----------------------------
-// Status
- // ------ bot.on('ready', () => {
-  // ------  bot.user.setStatus('online')
-  // ------  bot.user.setGame('Playing endersplace.crafted.pro' )
- // ------}); 
-//------------------------------
 
 // Login / Run
 
