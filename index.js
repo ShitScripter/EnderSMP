@@ -11,7 +11,7 @@ bot.on('ready', () => {
 
 bot.on('message', msg => {
     if (msg.content === "e!ip") {
-        msg.reply('endersplace.crafted.pro - Version 1.15.2');
+        msg.reply('endersplace.crafted.pro | Version 1.15.2');
 
     }
 });
