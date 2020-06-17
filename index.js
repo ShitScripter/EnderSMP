@@ -1,7 +1,6 @@
 // Variables
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-var channelID = 'general'
 //-------------------------
 
 bot.on('ready', () => {
@@ -120,8 +119,10 @@ bot.on("guildMemberAdd", member => {
 
 
 bot.on("message", function(message) {
+    const specChan = message.guild.channels.cache.find(channel => channel.name === 'general');
     if (message.content === '1') {
-        bot.channels.get(channelID).send('2');
+        
+        message.specChan.send("content")
     }
     
 });
