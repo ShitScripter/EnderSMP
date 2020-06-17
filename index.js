@@ -116,6 +116,16 @@ bot.on("guildMemberAdd", member => {
     welcomeChannel.send (`Welcome! ${member}! Make sure to "e!rules" to see the rules to the server!`);
     
 });
+
+bot.on('message', msg => {
+    const Channel = member.guild.channels.cache.find(channel => channel.name === 'general');
+       if (msg.content === "1") {    
+       Channel.send (`2`);
+   
+       }
+   });
+   console.log('update')
+
 //-----------------------------
 //-----------------------------
 // Status
