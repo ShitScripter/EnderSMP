@@ -129,6 +129,15 @@ bot.on('message', msg => {
 });
 
 
+bot.on('message', msg => {
+    if (msg.content === "1") {
+    const channelID = msg.guild.channels.cache.find(channel => channel.name === 'general');
+    channelID.send (`2`);
+    }
+    
+});
+
+
 //-----------------------------
 //-----------------------------
 // Status
