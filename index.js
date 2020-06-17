@@ -122,10 +122,12 @@ bot.on("guildMemberAdd", member => {
 
 bot.on('message', msg => {
      if (msg.content === "1") {    
-            bot.channels.cache.get('general').send('Hello here!')
-       }
-   });
-console.log('update')
+            bot.channels.cache.get('general').send('2')
+
+     }
+
+});
+
 
 //-----------------------------
 //-----------------------------
