@@ -15,7 +15,7 @@ bot.on("message", function(message) {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('710930613774844004');
     if (message.content === 'e!ip') {   
         channelVar.send("endersplace.crafted.pro | Version 1.15.2");
-        
+
     }
     
 });
@@ -23,7 +23,7 @@ bot.on("message", function(message) {
 
 bot.on("message", function(message) {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('710930613774844004');
-    if (msg.content === "e!rules") {
+    if (message.content === "e!rules") {
         channelVar.send("```diff\n-Discord Rules | Breaking any of these rules will result in an immediate ban\n!➼ No Harassment. This includes Sexist, Racial, Homophobic or just generally rude comments towards any player\n!➼ No NSFW. Keep the channel PG\n!➼ No Cursing.\n!➼ No Controversial or triggering topics. Including suicide, self-harm, substance abuse, sexual content, etc.\n!➼ No advertising of any kind (This includes dm advertising)\n!➼ Use the channels appropriately\n!➼ Staff decisions are final\n!➼ Use Common Sense\n\n!➼ All Discord Terms of Service (https://discordapp.com/terms) apply. Breaking any of these will result in a permanent ban from the server. (This includes DM Advertising) If you witness any of these terms being broken, **please report them to a server Staff Member immediately**.\n\n\n-Server Rules | All Previous rules Apply!\n!➼ No Cheating/Hacking. This includes but is not limited to injecting cheats into PVP clients, Xray texture packs, ghost clients. (PVP Clients are OK)\n!➼ No abusing Glitches/Exploits. If you are caught doing so you will be permanently banned. *     *Please report these glitches to the staff members IMMEDIATELY**.\n!➼ Schematica is OK but printer is not.\n```");
 
     }
@@ -94,28 +94,28 @@ bot.on('message', msg => {
     
 bot.on("message", function(message) {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('711047144513208351');
-    if (msg.content === "ping") {
+    if (message.content === "ping") {
         channelVar.send('**Pong!** :ping_pong:');
     }
 });
 
 bot.on("message", function(message) {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('711047144513208351');
-    if (msg.content === "Ping") {
+    if (message.content === "Ping") {
         channelVar.send('**Pong!** :ping_pong:');
     }
 });
 
 bot.on("message", function(message) {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('711047144513208351');
-    if (msg.content === "pong") {
+    if (message.content === "pong") {
         channelVar.send('**Ping!** :ping_pong:');
     }
 });
 
 bot.on("message", function(message) {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('711047144513208351');
-    if (msg.content === "Pong") {
+    if (message.content === "Pong") {
         channelVar.send('**Ping!** :ping_pong:');
     }
 });
