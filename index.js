@@ -121,7 +121,7 @@ bot.on("guildMemberAdd", member => {
 
 bot.on("message", function(message) {
     if (message.content === '1') {
-        bot.channels.get(channelID).send('My Message');
+        bot.channels.get(channelID).send('2');
     }
     
 });
