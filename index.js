@@ -5,6 +5,7 @@ const bot = new Discord.Client();
 
 bot.on('ready', () => {
     console.log('Bot is online');
+
 });
 
 // Commands
@@ -14,6 +15,7 @@ bot.on("message", function(message) {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('710930613774844004');
     if (message.content === 'e!ip') {   
         channelVar.send("endersplace.crafted.pro | Version 1.15.2");
+        
     }
     
 });
@@ -36,7 +38,6 @@ bot.on('message', msg => {
     }
 });
 //--------------------------
-
 
 // Greetings
 bot.on('message', msg => {  
@@ -90,32 +91,34 @@ bot.on('message', msg => {
 
 // Fun things
 
-bot.on('message', msg => {
+    
+bot.on("message", function(message) {
+    let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('711047144513208351');
     if (msg.content === "ping") {
-        msg.reply('**Pong!** :ping_pong:');
+        channelVar.send('**Pong!** :ping_pong:');
     }
 });
 
-
-bot.on('message', msg => {
-    if (msg.content === "pong") {
-        msg.reply('**Ping!** :ping_pong:');
-    }
-});
-
-bot.on('message', msg => {
+bot.on("message", function(message) {
+    let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('711047144513208351');
     if (msg.content === "Ping") {
-        msg.reply('**Pong!** :ping_pong:');
+        channelVar.send('**Pong!** :ping_pong:');
     }
 });
 
+bot.on("message", function(message) {
+    let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('711047144513208351');
+    if (msg.content === "pong") {
+        channelVar.send('**Ping!** :ping_pong:');
+    }
+});
 
-bot.on('message', msg => {
+bot.on("message", function(message) {
+    let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('711047144513208351');
     if (msg.content === "Pong") {
-        msg.reply('**Ping!** :ping_pong:');
+        channelVar.send('**Ping!** :ping_pong:');
     }
 });
-
 
 
 // Guild member add
