@@ -119,16 +119,6 @@ bot.on("guildMemberAdd", member => {
 });
 
 
-
-bot.on('message', msg => {
-     if (msg.content === "1") {    
-            bot.channels.cache.get('general').send('2')
-
-     }
-
-});
-
-
 bot.on('message', msg => {
     if (msg.content === "1") {
     const channelID = msg.guild.channels.cache.find(channel => channel.name === 'general');
