@@ -144,7 +144,7 @@ bot.login(process.env.token);
  bot.on('message', msg => {
  const Channel = member.guild.channels.cache.find(channel => channel.name === 'general');
     if (msg.content === "1") {    
-    Channel.send (`2`);
+    Channel.send (`${member} 2`);
 
     }
 });
