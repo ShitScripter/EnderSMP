@@ -1,6 +1,7 @@
 // Variables
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const Channel = member.guild.channels.cache.find(channel => channel.name === 'general');
 //-------------------------
 
 bot.on('ready', () => {
@@ -118,13 +119,13 @@ bot.on("guildMemberAdd", member => {
 });
 
 bot.on('message', msg => {
-    const Channel = member.guild.channels.cache.find(channel => channel.name === 'general');
-       if (msg.content === "1") {    
+     if (msg.content === "1") {    
        Channel.msg.reply(`2`);
+       console.log('update2')
    
        }
    });
-   console.log('update')
+console.log('update')
 
 //-----------------------------
 //-----------------------------
@@ -141,11 +142,5 @@ bot.login(process.env.token);
 
 //--------------
 
- bot.on('message', msg => {
- const Channel = member.guild.channels.cache.find(channel => channel.name === 'general');
-    if (msg.content === "1") {    
-    Channel.send (`${member} 2`);
 
-    }
-});
 console.log('update')
