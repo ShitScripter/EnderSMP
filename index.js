@@ -159,7 +159,7 @@ bot.on('message', async message => {
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
     if(!message.member.hasPermission('ADMINISTRATOR')) return;
-    else message.send("you do not have permission")
+    else message.reply("You dont not have Permission to execute this command")
     let msg = message.content.toLowerCase();
 
 
