@@ -1,7 +1,7 @@
 // Variables
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-
+const prefix = '?'
 
 require("./util/eventHandler")(bot)
 //-------------------------
@@ -150,7 +150,7 @@ bot.on('message', msg => {
       }
 });
 
-const prefix = '?'
+
 
 
 
