@@ -155,7 +155,7 @@ bot.on('message', msg => {
 
 
 bot.on('message', async message => {
-    let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('710584439989862481');
+    let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('732040634931740692');
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
     let msg = message.content.toLowerCase();
@@ -164,7 +164,7 @@ bot.on('message', async message => {
     if (msg.startsWith(prefix + "sudo")) {
     let repeat = message.content.substring(5);
     channelVar.send(repeat);
-    msg.delete();
+    message.delete();
     }
 });
 
