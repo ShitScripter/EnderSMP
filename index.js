@@ -158,7 +158,7 @@ bot.on('message', async message => {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('732040634931740692');
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
-    if(![Message].member.hasPermission('ADMINISTRATOR')) return;
+    if(!message.member.hasPermission('ADMINISTRATOR')) return;
     let msg = message.content.toLowerCase();
 
 
