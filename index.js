@@ -143,7 +143,12 @@ bot.on("message", function(message) {
     
 });
 
-
+bot.on('message', msg => {
+      if(msg.content === ">a") {
+        if (!msg.hasPermission('ADMINISTRATOR')) return;
+                msg.reply("B");
+      }
+});
 
 // Login / Run
 
