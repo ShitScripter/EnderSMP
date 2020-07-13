@@ -159,9 +159,6 @@ bot.on('message', async message => {
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
     if (!Discord.GuildMember.hasPermission('ADMINISTRATOR')) return;
-    else{
-        message.send('You do not have permission to execute this command!! :sunglasses:')
-    } 
     let msg = message.content.toLowerCase();
 
 
