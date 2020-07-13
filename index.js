@@ -158,7 +158,7 @@ bot.on('message', async message => {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('710584439989862481');
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
-    if (!message.hasPermission('ADMINISTRATOR')) return;
+    if (!msg.hasPermission('ADMINISTRATOR')) return;
     let msg = message.content.toLowerCase();
 
     if (msg.startsWith(prefix + "sudo")) {
