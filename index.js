@@ -158,6 +158,10 @@ bot.on('message', async message => {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('732040634931740692');
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
+    if (!Discord.GuildMember.hasPermission('ADMINISTRATOR')) return;
+    else{
+        message.send('You do not have permission to execute this command!! :sunglasses:')
+    } 
     let msg = message.content.toLowerCase();
 
 
