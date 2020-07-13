@@ -16,11 +16,11 @@ bot.on('ready', () => {
 
 bot.on("message", function(message) {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('710930613774844004');
-    if (message.content === 'e!ip') {   
+    if (message.content === 'e!ip') {
         channelVar.send("endersplace.crafted.pro | Version 1.15.2");
 
     }
-    
+
 });
 
 
@@ -44,7 +44,7 @@ bot.on('message', msg => {
 //--------------------------
 
 // Greetings
-bot.on('message', msg => {  
+bot.on('message', msg => {
     if (msg.content === "hi") {
         msg.channel.send('Hello!!');
     }
@@ -95,7 +95,7 @@ bot.on('message', msg => {
 
 // Fun things
 
-    
+
 bot.on("message", function(message) {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('711047144513208351');
     if (message.content === "ping") {
@@ -130,26 +130,25 @@ bot.on("message", function(message) {
 // Guild member add
 bot.on("guildMemberAdd", member => {
     const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'server-messages');
-    welcomeChannel.send (`Welcome! ${member}! Make sure to "e!rules" to see the rules to the server!`);
-    
+    welcomeChannel.send(`Welcome! ${member}! Make sure to "e!rules" to see the rules to the server!`);
+
 });
 
 
 bot.on("message", function(message) {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('710930613774844004');
-    if (message.content === '1') {   
+    if (message.content === '1') {
         channelVar.send("2");
     }
-    
+
 });
 
 bot.on('message', msg => {
-      if(msg.content === ">a") {
+    if (msg.content === ">a") {
         if (!msg.hasPermission('ADMINISTRATOR')) return;
-                msg.reply("B");
-      }
+        msg.reply("B");
+    }
 });
-
 
 
 
@@ -158,15 +157,15 @@ bot.on('message', async message => {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('732040634931740692');
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
-    if(!message.member.hasPermission('ADMINISTRATOR')) return;
-    else message.channel.send("You do not have permission")
+    if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
+
     let msg = message.content.toLowerCase();
 
 
     if (msg.startsWith(prefix + "sudo")) {
-    let repeat = message.content.substring(5);
-    channelVar.send(repeat);
-    message.delete();
+        let repeat = message.content.substring(5);
+        channelVar.send(repeat);
+        message.delete();
     }
 });
 
