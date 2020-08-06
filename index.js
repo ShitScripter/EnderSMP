@@ -149,7 +149,7 @@ bot.on("message", function(message) {
         if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
                 message.channel.bulkDelete(10)
                 message.channel.send("Deleted <10> messages")
-                message.content.delete()
+                message.delete()
         }
 });
 
