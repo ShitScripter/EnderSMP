@@ -215,6 +215,28 @@ bot.on('message', async message => {
 
 
 
+bot.on('message', async msg=> {
+    if(msg.author.bot) return;
+    if(!msg.content.startsWith(PREFIX)) return;
+
+    let args = msg.content.substring(PREFIX.length).split(" ");
+
+    switch(args[0]){
+        //announcement
+        case 'an':
+            let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('710881620814725351');
+            if(!message.member.hasPermission('MANAGE_CHANNELS')) return;
+            if(message.author.bot) return;
+            if (!message.content.startsWith(prefix)) return;
+            if(!args[2]) return;
+            channelVar.send(args.slice(1).join(" "));
+            message.delete();
+            break;
+    }
+});
+
+
+
 
 
 
