@@ -192,6 +192,41 @@ bot.on("message", function(message) {
 });    
 
 ////
+
+
+
+bot.on('message', async message => {
+    let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('710881620814725351');
+    if (message.author.bot) return;
+    if (!message.content.startsWith(prefix)) return;
+    if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
+
+    let msg = message.content.toLowerCase();
+
+
+    if (msg.startsWith(prefix + "an")) {
+        let repeat = message.content.substring(5);
+        channelVar.send(repeat);
+        message.delete();
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///
 // Login / Run
 
 bot.login(process.env.token);
