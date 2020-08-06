@@ -150,7 +150,7 @@ bot.on("message", function(message) {
                 message.channel.bulkDelete(10);
                 message.channel.send("Deleted <10> messages")
                 message.delete();
-                message.edit.message(" ")
+                message.edit(" ")
         }
 });
 
