@@ -148,13 +148,13 @@ bot.on("message", function(message) {
 
 
 
-bot.on('message', async message => {
+bot.on('message', async(message) => {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('710584439989862481*');
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
     if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
 
-    let msg = message.content.toLowerCase();
+    let message = message.content.toLowerCase();
 
 
     if (message.startsWith(prefix + "sudo")) {
