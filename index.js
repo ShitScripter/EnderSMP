@@ -154,10 +154,10 @@ bot.on('message', async(message) => {
     if (!message.content.startsWith(prefix)) return;
     if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
 
-    let message = message.content.toLowerCase();
+    let msg = message.content.toLowerCase();
 
 
-    if (message.startsWith(prefix + "sudo")) {
+    if (msg.startsWith(prefix + "sudo")) {
         let repeat = message.content.substring(5);
         channelVar.send(repeat);
         message.delete();
