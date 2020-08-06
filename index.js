@@ -144,6 +144,47 @@ if (message.content === ">rules") {
 });
 
 
+bot.on("message", function(message) {
+    if (message.content === ">BulkDelete 10") {
+        if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
+                message.channel.bulkDelete(10)
+                message.channel.send("Deleted <10> messages")
+    
+        }
+});
+
+
+    bot.on("message", function(message) {
+        if (message.content === ">BulkDelete 20") {
+            if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
+                    message.channel.bulkDelete(20)
+                    message.channel.send("Deleted <20> messages")
+            }
+});    
+
+bot.on("message", function(message) {
+    if (message.content === ">BulkDelete 30") {
+        if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
+                message.channel.bulkDelete(30)
+                message.channel.send("Deleted <30> messages")
+        }
+});    
+
+bot.on("message", function(message) {
+    if (message.content === ">BulkDelete 40") {
+        if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
+                message.channel.bulkDelete(40)
+                message.channel.send("Deleted <40> messages")
+        }
+});    
+
+bot.on("message", function(message) {
+    if (message.content === ">BulkDelete 50") {
+        if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
+                message.channel.bulkDelete(50)
+                message.channel.send("Deleted <50> messages")
+        }
+});    
 
 ////
 // Login / Run
