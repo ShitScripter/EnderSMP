@@ -155,7 +155,7 @@ bot.on('message', async message => {
     if (!message.content.startsWith(prefix)) return;
     if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
 
-    let message = message.content.toLowerCase();
+    let msg = message.content.toLowerCase();
 
 
     if (message.startsWith(prefix + "sudo")) {
