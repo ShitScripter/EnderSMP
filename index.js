@@ -6,7 +6,7 @@ require("./util/eventHandler")(bot)
 //-------------------------
 
 bot.on('ready', () => {
-    console.log('Bot is online');
+    console.log('AlternatorMC Bot; is online');
 
 });
 
@@ -149,7 +149,7 @@ bot.on("message", function(message) {
         if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
                 message.channel.bulkDelete(10)
                 message.channel.send("Deleted <10> messages")
-    
+                message.delete()
         }
 });
 
@@ -159,6 +159,7 @@ bot.on("message", function(message) {
             if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
                     message.channel.bulkDelete(20)
                     message.channel.send("Deleted <20> messages")
+                    message.delete()
             }
 });    
 
@@ -167,6 +168,7 @@ bot.on("message", function(message) {
         if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
                 message.channel.bulkDelete(30)
                 message.channel.send("Deleted <30> messages")
+                message.delete()
         }
 });    
 
@@ -175,6 +177,7 @@ bot.on("message", function(message) {
         if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
                 message.channel.bulkDelete(40)
                 message.channel.send("Deleted <40> messages")
+                message.delete()
         }
 });    
 
@@ -183,6 +186,7 @@ bot.on("message", function(message) {
         if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
                 message.channel.bulkDelete(50)
                 message.channel.send("Deleted <50> messages")
+                message.delete()
         }
 });    
 
