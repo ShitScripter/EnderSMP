@@ -144,7 +144,7 @@ if (message.content === ">rules") {
 });
 
 
-bot.on("message", function(messageF) {
+bot.on("message", function(message) {
     if (message.content === ">BulkDelete 10") {
         if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
                 message.channel.bulkDelete(10);
