@@ -200,7 +200,7 @@ bot.on('message', async message => {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('710881620814725351');
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
-    if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You do not have permission");
+    if (!message.member.hasPermission('ADMINISTRATOR')) return;
 
     let msg = message.content.toLowerCase();
 
