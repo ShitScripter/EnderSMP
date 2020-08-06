@@ -153,7 +153,7 @@ bot.on("message", function(message) {
                 message.edit(" ")
         }
 });
-
+//
 
     bot.on("message", function(message) {
         if (message.content === ">BulkDelete 20") {
