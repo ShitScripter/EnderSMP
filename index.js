@@ -205,7 +205,7 @@ bot.on('message', async message => {
     let msg = message.content.toLowerCase();
 
 
-    if (msg.startsWith(prefix + "an")) {
+    if (msg.startsWith(prefix + "da")) {
         let repeat = message.content.substring(5);
         channelVar.send(repeat);
         message.delete();
@@ -213,7 +213,7 @@ bot.on('message', async message => {
 });
 
 
-
+const PREFIX = ">"
 
 bot.on('message', async msg=> {
     if(msg.author.bot) return;
