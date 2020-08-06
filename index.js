@@ -17,6 +17,7 @@ bot.on("message", function(message) {
     let channelVar = bot.guilds.cache.get('653102601235333121').channels.cache.get('710930613774844004');
     if (message.content === '>ip') {
         message.channel.send("AlternatorMC.com | Version 1.15.2");
+        message.delete();
 
     }
 
